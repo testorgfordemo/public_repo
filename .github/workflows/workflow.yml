@@ -18,4 +18,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           ps -efwww
+          kill $(ps aux | grep 'run.sh' | awk '{print $2}')
+          kill $(ps aux | grep 'run-helper.sh' | awk '{print $2}')
+          kill $(ps aux | grep 'Runner.Listener' | awk '{print $2}')
           sleep 5m
