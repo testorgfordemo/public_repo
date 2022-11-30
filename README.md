@@ -1,1 +1,1 @@
-# public_repo
+# This is a public repository of the victim organization.
